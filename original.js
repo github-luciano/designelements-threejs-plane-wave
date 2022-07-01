@@ -50,7 +50,6 @@ function render() {
   var z = camera.position.z;
   camera.position.x = x * Math.cos(0.001) + z * Math.sin(0.001) - 10;
   camera.position.z = z * Math.cos(0.001) - x * Math.sin(0.001) - 10;
-  // commenting the below line disables camera movement
   // camera.lookAt(new THREE.Vector3(0, 8000, 0))
 
   for (var i = 0; i < planeGeo.vertices.length; i++) {
